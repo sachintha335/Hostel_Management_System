@@ -30,10 +30,11 @@
         {
             this.btnLogOut = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnRooms = new System.Windows.Forms.Button();
-            this.btnStudents = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
+            this.btnStudents = new System.Windows.Forms.Button();
+            this.btnRooms = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,9 +45,10 @@
             this.btnLogOut.BackColor = System.Drawing.Color.Red;
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogOut.Location = new System.Drawing.Point(952, 24);
+            this.btnLogOut.Location = new System.Drawing.Point(714, 20);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(127, 45);
+            this.btnLogOut.Size = new System.Drawing.Size(95, 37);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
@@ -57,50 +59,15 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnEmployees);
             this.panel1.Controls.Add(this.btnStudents);
             this.panel1.Controls.Add(this.btnRooms);
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(285, 693);
+            this.panel1.Size = new System.Drawing.Size(214, 563);
             this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.btnLogOut);
-            this.panel2.Location = new System.Drawing.Point(290, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1111, 100);
-            this.panel2.TabIndex = 3;
-            // 
-            // btnRooms
-            // 
-            this.btnRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRooms.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRooms.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRooms.Location = new System.Drawing.Point(13, 255);
-            this.btnRooms.Name = "btnRooms";
-            this.btnRooms.Size = new System.Drawing.Size(258, 45);
-            this.btnRooms.TabIndex = 1;
-            this.btnRooms.Text = "Rooms";
-            this.btnRooms.UseVisualStyleBackColor = false;
-            // 
-            // btnStudents
-            // 
-            this.btnStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStudents.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnStudents.Location = new System.Drawing.Point(13, 363);
-            this.btnStudents.Name = "btnStudents";
-            this.btnStudents.Size = new System.Drawing.Size(258, 45);
-            this.btnStudents.TabIndex = 2;
-            this.btnStudents.Text = "Students";
-            this.btnStudents.UseVisualStyleBackColor = false;
             // 
             // btnEmployees
             // 
@@ -108,21 +75,77 @@
             this.btnEmployees.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnEmployees.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployees.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEmployees.Location = new System.Drawing.Point(13, 463);
+            this.btnEmployees.Location = new System.Drawing.Point(10, 376);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(258, 45);
+            this.btnEmployees.Size = new System.Drawing.Size(194, 37);
             this.btnEmployees.TabIndex = 3;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.UseVisualStyleBackColor = false;
             // 
+            // btnStudents
+            // 
+            this.btnStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStudents.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnStudents.Location = new System.Drawing.Point(10, 295);
+            this.btnStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStudents.Name = "btnStudents";
+            this.btnStudents.Size = new System.Drawing.Size(194, 37);
+            this.btnStudents.TabIndex = 2;
+            this.btnStudents.Text = "Students";
+            this.btnStudents.UseVisualStyleBackColor = false;
+            // 
+            // btnRooms
+            // 
+            this.btnRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRooms.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRooms.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRooms.Location = new System.Drawing.Point(10, 207);
+            this.btnRooms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRooms.Name = "btnRooms";
+            this.btnRooms.Size = new System.Drawing.Size(194, 37);
+            this.btnRooms.TabIndex = 1;
+            this.btnRooms.Text = "Rooms";
+            this.btnRooms.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.btnLogOut);
+            this.panel2.Location = new System.Drawing.Point(218, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(833, 81);
+            this.panel2.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(9, 447);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Security";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1399, 697);
+            this.ClientSize = new System.Drawing.Size(1028, 566);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -141,6 +164,7 @@
         private System.Windows.Forms.Button btnEmployees;
         private System.Windows.Forms.Button btnStudents;
         private System.Windows.Forms.Button btnRooms;
+        private System.Windows.Forms.Button button1;
     }
 }
 
