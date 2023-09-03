@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class frmAdmin : Form
+    public partial class Form1 : Form
     {
-        public frmAdmin()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void frmAdmin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
