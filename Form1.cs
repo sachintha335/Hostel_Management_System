@@ -26,5 +26,27 @@ namespace Hostel_Management_System
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'studentDataSet.student_table' table. You can move, or remove it, as needed.
+            this.student_tableTableAdapter.Fill(this.studentDataSet.student_table);
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
