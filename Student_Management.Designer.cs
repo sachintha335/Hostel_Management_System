@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.backgroundPanel = new System.Windows.Forms.Panel();
-            this.searchBox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Student_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.searchBtn = new System.Windows.Forms.Button();
+            this.roomNoCombo = new System.Windows.Forms.ComboBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.parentContactBox = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.searchStudLbl = new System.Windows.Forms.Label();
             this.addNewStudLbl = new System.Windows.Forms.Label();
             this.headingLbl = new System.Windows.Forms.Label();
-            this.roomNoCombo = new System.Windows.Forms.ComboBox();
-            this.searchBtn = new System.Windows.Forms.Button();
             this.backgroundPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -63,10 +63,10 @@
             // backgroundPanel
             // 
             this.backgroundPanel.BackColor = System.Drawing.Color.Teal;
+            this.backgroundPanel.Controls.Add(this.dataGridView1);
             this.backgroundPanel.Controls.Add(this.searchBtn);
             this.backgroundPanel.Controls.Add(this.roomNoCombo);
             this.backgroundPanel.Controls.Add(this.searchBox);
-            this.backgroundPanel.Controls.Add(this.dataGridView1);
             this.backgroundPanel.Controls.Add(this.clearBtn);
             this.backgroundPanel.Controls.Add(this.saveBtn);
             this.backgroundPanel.Controls.Add(this.parentContactBox);
@@ -89,8 +89,61 @@
             this.backgroundPanel.Controls.Add(this.headingLbl);
             this.backgroundPanel.Location = new System.Drawing.Point(-1, 0);
             this.backgroundPanel.Name = "backgroundPanel";
-            this.backgroundPanel.Size = new System.Drawing.Size(1057, 651);
+            this.backgroundPanel.Size = new System.Drawing.Size(1162, 651);
             this.backgroundPanel.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.dataGridView1.Location = new System.Drawing.Point(610, 213);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(540, 207);
+            this.dataGridView1.TabIndex = 25;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "studentId";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "edit";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // searchBtn
+            // 
+            this.searchBtn.Location = new System.Drawing.Point(888, 153);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(97, 29);
+            this.searchBtn.TabIndex = 24;
+            this.searchBtn.Text = "Search";
+            this.searchBtn.UseVisualStyleBackColor = true;
+            // 
+            // roomNoCombo
+            // 
+            this.roomNoCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomNoCombo.FormattingEnabled = true;
+            this.roomNoCombo.Location = new System.Drawing.Point(283, 550);
+            this.roomNoCombo.Name = "roomNoCombo";
+            this.roomNoCombo.Size = new System.Drawing.Size(239, 33);
+            this.roomNoCombo.TabIndex = 23;
             // 
             // searchBox
             // 
@@ -100,41 +153,6 @@
             this.searchBox.Size = new System.Drawing.Size(239, 30);
             this.searchBox.TabIndex = 22;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Student_ID,
-            this.Name,
-            this.Edit});
-            this.dataGridView1.Location = new System.Drawing.Point(610, 203);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(416, 150);
-            this.dataGridView1.TabIndex = 21;
-            // 
-            // Student_ID
-            // 
-            this.Student_ID.HeaderText = "Student Id";
-            this.Student_ID.MinimumWidth = 6;
-            this.Student_ID.Name = "Student_ID";
-            this.Student_ID.Width = 125;
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.Width = 125;
-            // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "Edit";
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 125;
-            // 
             // clearBtn
             // 
             this.clearBtn.Location = new System.Drawing.Point(424, 603);
@@ -143,6 +161,7 @@
             this.clearBtn.TabIndex = 20;
             this.clearBtn.Text = "Clear";
             this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // saveBtn
             // 
@@ -152,6 +171,7 @@
             this.saveBtn.TabIndex = 19;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // parentContactBox
             // 
@@ -301,7 +321,7 @@
             // 
             this.searchStudLbl.Font = new System.Drawing.Font("Doppio One", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchStudLbl.ForeColor = System.Drawing.Color.White;
-            this.searchStudLbl.Location = new System.Drawing.Point(678, 68);
+            this.searchStudLbl.Location = new System.Drawing.Point(743, 68);
             this.searchStudLbl.Name = "searchStudLbl";
             this.searchStudLbl.Size = new System.Drawing.Size(348, 42);
             this.searchStudLbl.TabIndex = 2;
@@ -323,36 +343,18 @@
             // 
             this.headingLbl.Font = new System.Drawing.Font("Doppio One", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headingLbl.ForeColor = System.Drawing.Color.White;
-            this.headingLbl.Location = new System.Drawing.Point(323, 0);
+            this.headingLbl.Location = new System.Drawing.Point(365, 0);
             this.headingLbl.Name = "headingLbl";
             this.headingLbl.Size = new System.Drawing.Size(385, 59);
             this.headingLbl.TabIndex = 0;
             this.headingLbl.Text = "Student Management";
             this.headingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // roomNoCombo
-            // 
-            this.roomNoCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomNoCombo.FormattingEnabled = true;
-            this.roomNoCombo.Location = new System.Drawing.Point(283, 550);
-            this.roomNoCombo.Name = "roomNoCombo";
-            this.roomNoCombo.Size = new System.Drawing.Size(239, 33);
-            this.roomNoCombo.TabIndex = 23;
-            // 
-            // searchBtn
-            // 
-            this.searchBtn.Location = new System.Drawing.Point(900, 153);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(97, 29);
-            this.searchBtn.TabIndex = 24;
-            this.searchBtn.Text = "Search";
-            this.searchBtn.UseVisualStyleBackColor = true;
-            // 
             // Student_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 649);
+            this.ClientSize = new System.Drawing.Size(1160, 649);
             this.Controls.Add(this.backgroundPanel);
             this.Name = "Student_Management";
             this.Text = "Student_Management";
@@ -386,12 +388,12 @@
         private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button saveBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Student_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edit;
         private System.Windows.Forms.ComboBox roomNoCombo;
         private System.Windows.Forms.Button searchBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
