@@ -26,5 +26,10 @@ namespace Hostel_Management_System
         {
 
         }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
