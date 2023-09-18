@@ -46,7 +46,7 @@
             this.btnLogOut.BackColor = System.Drawing.Color.Red;
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogOut.Location = new System.Drawing.Point(633, 25);
+            this.btnLogOut.Location = new System.Drawing.Point(622, 25);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(127, 46);
@@ -151,14 +151,14 @@
             this.panel2.Location = new System.Drawing.Point(291, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(792, 100);
+            this.panel2.Size = new System.Drawing.Size(781, 100);
             this.panel2.TabIndex = 3;
             // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 615);
+            this.ClientSize = new System.Drawing.Size(1046, 615);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
