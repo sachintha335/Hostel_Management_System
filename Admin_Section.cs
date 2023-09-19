@@ -31,8 +31,6 @@ namespace Hostel_Management_System
         {
             Form1 fm = new Form1();
             fm.ShowDialog();
-            
-        
         }
     }
 }

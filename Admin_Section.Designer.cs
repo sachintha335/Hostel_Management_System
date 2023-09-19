@@ -47,8 +47,9 @@
             this.btnLogOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogOut.Location = new System.Drawing.Point(475, 20);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(95, 37);
+            this.btnLogOut.Size = new System.Drawing.Size(127, 46);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
@@ -63,10 +64,11 @@
             this.panel1.Controls.Add(this.btnEmployees);
             this.panel1.Controls.Add(this.btnStudents);
             this.panel1.Controls.Add(this.btnRooms);
+
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 497);
+            this.panel1.Size = new System.Drawing.Size(285, 612);
             this.panel1.TabIndex = 2;
             // 
             // button1
@@ -75,6 +77,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+
             this.button1.Location = new System.Drawing.Point(8, 284);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -93,7 +96,7 @@
             this.btnEmployees.Location = new System.Drawing.Point(9, 213);
             this.btnEmployees.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(194, 37);
+            this.btnEmployees.Size = new System.Drawing.Size(259, 46);
             this.btnEmployees.TabIndex = 3;
             this.btnEmployees.Text = "Employees";
             this.btnEmployees.UseVisualStyleBackColor = false;
@@ -104,13 +107,15 @@
             this.btnStudents.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudents.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+
             this.btnStudents.Location = new System.Drawing.Point(9, 132);
             this.btnStudents.Margin = new System.Windows.Forms.Padding(2);
             this.btnStudents.Name = "btnStudents";
-            this.btnStudents.Size = new System.Drawing.Size(194, 37);
+            this.btnStudents.Size = new System.Drawing.Size(259, 46);
             this.btnStudents.TabIndex = 2;
             this.btnStudents.Text = "Students";
             this.btnStudents.UseVisualStyleBackColor = false;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // btnRooms
             // 
@@ -120,8 +125,9 @@
             this.btnRooms.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRooms.Location = new System.Drawing.Point(9, 44);
             this.btnRooms.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnRooms.Name = "btnRooms";
-            this.btnRooms.Size = new System.Drawing.Size(194, 37);
+            this.btnRooms.Size = new System.Drawing.Size(259, 46);
             this.btnRooms.TabIndex = 1;
             this.btnRooms.Text = "Rooms";
             this.btnRooms.UseVisualStyleBackColor = false;
@@ -135,14 +141,14 @@
             this.panel2.Location = new System.Drawing.Point(218, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(594, 81);
+            this.panel2.Size = new System.Drawing.Size(792, 100);
             this.panel2.TabIndex = 3;
             // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 500);
+            this.ClientSize = new System.Drawing.Size(1052, 615);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
