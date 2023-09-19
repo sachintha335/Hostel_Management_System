@@ -91,6 +91,7 @@
             this.backgroundPanel.Name = "backgroundPanel";
             this.backgroundPanel.Size = new System.Drawing.Size(1162, 651);
             this.backgroundPanel.TabIndex = 0;
+            this.backgroundPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.backgroundPanel_Paint);
             // 
             // dataGridView1
             // 
@@ -231,7 +232,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(13, 550);
             this.label7.Name = "label7";
@@ -242,7 +243,7 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(13, 494);
             this.label6.Name = "label6";
@@ -253,7 +254,7 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 436);
             this.label5.Name = "label5";
@@ -264,7 +265,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(13, 381);
             this.label4.Name = "label4";
@@ -275,7 +276,7 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 323);
             this.label3.Name = "label3";
@@ -286,7 +287,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 269);
             this.label2.Name = "label2";
@@ -297,7 +298,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 213);
             this.label1.Name = "label1";
@@ -308,7 +309,7 @@
             // 
             // nameLbl
             // 
-            this.nameLbl.Font = new System.Drawing.Font("Doppio One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLbl.ForeColor = System.Drawing.Color.White;
             this.nameLbl.Location = new System.Drawing.Point(13, 153);
             this.nameLbl.Name = "nameLbl";
@@ -319,7 +320,7 @@
             // 
             // searchStudLbl
             // 
-            this.searchStudLbl.Font = new System.Drawing.Font("Doppio One", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchStudLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchStudLbl.ForeColor = System.Drawing.Color.White;
             this.searchStudLbl.Location = new System.Drawing.Point(743, 68);
             this.searchStudLbl.Name = "searchStudLbl";
@@ -330,7 +331,7 @@
             // 
             // addNewStudLbl
             // 
-            this.addNewStudLbl.Font = new System.Drawing.Font("Doppio One", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNewStudLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewStudLbl.ForeColor = System.Drawing.Color.White;
             this.addNewStudLbl.Location = new System.Drawing.Point(35, 68);
             this.addNewStudLbl.Name = "addNewStudLbl";
@@ -338,10 +339,11 @@
             this.addNewStudLbl.TabIndex = 1;
             this.addNewStudLbl.Text = "Add New Student";
             this.addNewStudLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.addNewStudLbl.Click += new System.EventHandler(this.addNewStudLbl_Click);
             // 
             // headingLbl
             // 
-            this.headingLbl.Font = new System.Drawing.Font("Doppio One", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headingLbl.ForeColor = System.Drawing.Color.White;
             this.headingLbl.Location = new System.Drawing.Point(365, 0);
             this.headingLbl.Name = "headingLbl";
