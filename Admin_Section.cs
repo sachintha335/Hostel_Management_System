@@ -27,11 +27,10 @@ namespace Hostel_Management_System
 
         }
 
-        private void btnStudents_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Student_Management studManage = new Student_Management();
-            studManage.StartPosition = FormStartPosition.CenterScreen;
-            studManage.Show();
+            Form1 fm = new Form1();
+            fm.ShowDialog();
         }
     }
 }
