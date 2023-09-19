@@ -26,5 +26,13 @@ namespace Hostel_Management_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.ShowDialog();
+            
+        
+        }
     }
 }

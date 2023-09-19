@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hostel_Management_System.studentDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +48,18 @@ namespace Hostel_Management_System
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            studenttableBindingSource.AddNew();
+            studenttableBindingSource.EndEdit();
+            student_tableTableAdapter.Update();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
