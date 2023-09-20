@@ -115,7 +115,7 @@
             this.btnStudents.TabIndex = 2;
             this.btnStudents.Text = "Students";
             this.btnStudents.UseVisualStyleBackColor = false;
-            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
+            //this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // btnRooms
             // 
