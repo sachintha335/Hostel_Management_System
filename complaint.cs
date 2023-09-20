@@ -13,14 +13,19 @@ namespace Hostel_Management_System
 {
     public partial class complaint : Form
     {
+        string query;
+        SqlCommand command;
+        SqlConnection conn;
         public complaint()
         {
             InitializeComponent();
             textBox5.Multiline = true;
             textBox5.ScrollBars = ScrollBars.Both;
-
+            DBConnection DBconnection = DBConnection.getConnection();
+            conn = DBconnection.con;
+            conn.Open();
         }
-        public SqlConnection connectdb()
+       /* public SqlConnection connectdb()
         {
             string connectionString;
             SqlConnection conn;
@@ -29,7 +34,7 @@ namespace Hostel_Management_System
             conn.Open();
 
             return conn;
-        }
+        }*/
         private bool validateNotEmpty(String textBox, String fieldName)
         {
             if (String.IsNullOrEmpty(textBox))
@@ -55,8 +60,8 @@ namespace Hostel_Management_System
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            SqlConnection conn;
-            conn = connectdb();
+            //SqlConnection conn;
+            //conn = connectdb();
 
             if (!validateNotEmpty(textBox1.Text, "Student Name")) return;
             if (!validateNotEmpty(textBox2.Text, "Student Number")) return;
@@ -146,7 +151,7 @@ namespace Hostel_Management_System
         private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection conn;
-            conn = connectdb();
+            //conn = connectdb();
             String searchValue = textBox6.Text;
             String sqlRe;
             sqlRe = "select * from Details where Student_no= @searchValue";

@@ -164,10 +164,11 @@
     <Compile Include="Student_Section_01.Designer.cs">
       <DependentUpon>Student_Section_01.cs</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="AdminSection.resx">
       <DependentUpon>AdminSection.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="complaint.resx">
+      <DependentUpon>complaint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
