@@ -10,11 +10,43 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class AdminSection : Form
+    public partial class frmAdminSection : Form
     {
-        public AdminSection()
+        public frmAdminSection()
         {
             InitializeComponent();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmUserLogin newLogin = new frmUserLogin();
+            newLogin.Show();
+            this.Hide();
+        }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            Student_Management newStudent = new Student_Management() { TopLevel = false, TopMost = true};
+            newStudent.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newStudent);
+            newStudent.Show();
+
+        }
+
+        private void btnEmployees_Click(object sender, EventArgs e)
+        {
+            Employee newEmployee = new Employee() { TopLevel = false, TopMost = true };
+            newEmployee.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newEmployee);
+            newEmployee.Show();
+        }
+
+        private void btnComplaints_Click(object sender, EventArgs e)
+        {
+            Employee newEmployee = new Employee() { TopLevel = false, TopMost = true };
+            newEmployee.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newEmployee);
+            newEmployee.Show();
         }
     }
 }

@@ -158,6 +158,9 @@
     <Compile Include="Student_Section_01.Designer.cs">
       <DependentUpon>Student_Section_01.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminSection.resx">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +236,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3139256.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

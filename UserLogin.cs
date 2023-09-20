@@ -63,7 +63,7 @@ namespace Hostel_Management_System
             {
                 if (cmbRole.Text == "Admin")
                 { 
-                    AdminSection newAdmin = new AdminSection();
+                    frmAdminSection newAdmin = new frmAdminSection();
                     newAdmin.Show();
                     this.Hide();
                 }

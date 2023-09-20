@@ -14,12 +14,14 @@ namespace Hostel_Management_System
 {
     public partial class Employee : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-0IGHJQIT;Initial Catalog=Hostel_Management_System;Integrated Security=True");
+        SqlConnection con;
         SqlCommand command;
         SqlDataReader mdr;
         public Employee()
         {
             InitializeComponent();
+            DBConnection DBconnection = DBConnection.getConnection();
+            con = DBconnection.con;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
