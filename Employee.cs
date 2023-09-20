@@ -22,10 +22,13 @@ namespace Hostel_Management_System
             InitializeComponent();
             DBConnection DBconnection = DBConnection.getConnection();
             con = DBconnection.con;
+            con.Close();
+            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            con.Open();
             if (txtMobile.Text != "" && txtName.Text != "" && txtEmpID.Text != "" && txtAddress.Text != "" && txtEmail.Text != "" && txtDesignation.SelectedIndex != -1)
             {
                 Int64 mobile = Int64.Parse(txtMobile.Text);
@@ -46,6 +49,7 @@ namespace Hostel_Management_System
             {
                 MessageBox.Show("Fill all Required Data.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            con.Close();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

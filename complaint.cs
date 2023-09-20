@@ -23,7 +23,8 @@ namespace Hostel_Management_System
             textBox5.ScrollBars = ScrollBars.Both;
             DBConnection DBconnection = DBConnection.getConnection();
             conn = DBconnection.con;
-            conn.Open();
+            conn.Close();
+            
         }
        /* public SqlConnection connectdb()
         {
@@ -62,7 +63,7 @@ namespace Hostel_Management_System
 
             //SqlConnection conn;
             //conn = connectdb();
-
+            conn.Open();
             if (!validateNotEmpty(textBox1.Text, "Student Name")) return;
             if (!validateNotEmpty(textBox2.Text, "Student Number")) return;
             if (!validateNotEmpty(textBox3.Text, "Faculty")) return;
@@ -152,6 +153,7 @@ namespace Hostel_Management_System
         {
             //SqlConnection conn;
             //conn = connectdb();
+            conn.Open();
             String searchValue = textBox6.Text;
             String sqlRe;
             sqlRe = "select * from Details where Student_no= @searchValue";

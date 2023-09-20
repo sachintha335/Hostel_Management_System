@@ -20,7 +20,8 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
             DBConnection DBconnection = DBConnection.getConnection();
-            connection = DBconnection.con; 
+            connection = DBconnection.con;
+            connection.Close();
             displayData();
         }
 
@@ -98,6 +99,7 @@ namespace Hostel_Management_System
 
         public void displayData()
         {
+            
             connection.Open();
             query = "select * from Room";
             command = new SqlCommand(query, connection);
