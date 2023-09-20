@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hostel_Management_System_New
+namespace Hostel_Management_System
 {
     public partial class frmUserLogin : Form
     {

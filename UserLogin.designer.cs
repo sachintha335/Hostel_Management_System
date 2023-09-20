@@ -1,4 +1,4 @@
-﻿namespace Hostel_Management_System_New
+﻿namespace Hostel_Management_System
 {
     partial class frmUserLogin
     {
