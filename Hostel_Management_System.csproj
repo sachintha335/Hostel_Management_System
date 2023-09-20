@@ -114,6 +114,12 @@
     <Compile Include="Student_Section_01.Designer.cs">
       <DependentUpon>Student_Section_01.cs</DependentUpon>
     </Compile>
+    <Compile Include="UOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UOR.Designer.cs">
+      <DependentUpon>UOR.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin_Section.resx">
       <DependentUpon>Admin_Section.cs</DependentUpon>
     </EmbeddedResource>
