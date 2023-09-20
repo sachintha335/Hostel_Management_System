@@ -43,10 +43,10 @@ namespace Hostel_Management_System
 
         private void btnComplaints_Click(object sender, EventArgs e)
         {
-            Employee newEmployee = new Employee() { TopLevel = false, TopMost = true };
-            newEmployee.FormBorderStyle = FormBorderStyle.None;
-            pnlMain.Controls.Add(newEmployee);
-            newEmployee.Show();
+            complaint newComplaint = new complaint() { TopLevel = false, TopMost = true };
+            newComplaint.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newComplaint);
+            newComplaint.Show();
         }
     }
 }
