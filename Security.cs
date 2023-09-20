@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Hostel_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Security : Form
     {
-        public Form1()
+        public Security()
         {
             InitializeComponent();
         }

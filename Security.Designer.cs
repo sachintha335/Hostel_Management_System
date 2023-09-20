@@ -1,6 +1,6 @@
 ﻿namespace Hostel_Management_System
 {
-    partial class Form1
+    partial class Security
     {
         /// <summary>
         /// Required designer variable.
