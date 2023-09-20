@@ -22,12 +22,13 @@ namespace Hostel_Management_System
         public Student_Management()
         {
             InitializeComponent();
-            addItemToRoomCombo();
-            createDeleteButtonColumn();
-            createViewButtonColumn();
             DBConnection DBconnection = DBConnection.getConnection();
             cnn = DBconnection.con;
             cnn.Open();
+            addItemToRoomCombo();
+            createDeleteButtonColumn();
+            createViewButtonColumn();
+            cnn.Close();
 
         }
 

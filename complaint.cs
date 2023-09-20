@@ -150,7 +150,7 @@ namespace Hostel_Management_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection conn;
+            //SqlConnection conn;
             //conn = connectdb();
             String searchValue = textBox6.Text;
             String sqlRe;

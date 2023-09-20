@@ -14,14 +14,17 @@ namespace Hostel_Management_System
 {
     public partial class Student_Section_01 : Form
     {
+        string query;
+        SqlCommand command;
+        SqlConnection connection;
         public Student_Section_01()
         {
             InitializeComponent();
-            string connectionString = "Data Source=DESKTOP-428C8AM;Initial Catalog=HMS;Integrated Security=True";
+            DBConnection DBconnection = DBConnection.getConnection();
+            connection = DBconnection.con;
             int studentIdToSearch = 111; // Replace with the student ID coming from login
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
+            
                 connection.Open();
 
                 string sqlQuery = "SELECT * FROM Students WHERE Student_Id = @studentId";
@@ -59,7 +62,6 @@ namespace Hostel_Management_System
                 }
 
                 connection.Close();
-            }
         
 
         }

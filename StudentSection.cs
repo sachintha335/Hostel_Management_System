@@ -16,5 +16,20 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            Student_Section_01 newStudent = new Student_Section_01() { TopLevel = false, TopMost = true };
+            newStudent.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newStudent);
+            newStudent.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmUserLogin newLogin = new frmUserLogin();
+            newLogin.Show();
+            this.Hide();
+        }
     }
 }
