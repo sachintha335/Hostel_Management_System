@@ -16,5 +16,41 @@ namespace Hostel_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmUserLogin newLogin = new frmUserLogin();
+            newLogin.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Canteen_Section_Add_Items newItem = new Canteen_Section_Add_Items() { TopLevel = false, TopMost = true };
+            newItem.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newItem);
+            newItem.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Canteen_Section_Remove_Items deletedItem = new Canteen_Section_Remove_Items() { TopLevel = false, TopMost = true };
+            deletedItem.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(deletedItem);
+            deletedItem.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Canteen_Section_View_Menu newMenu = new Canteen_Section_View_Menu() { TopLevel = false, TopMost = true };
+            newMenu.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newMenu);
+            newMenu.Show();
+        }
     }
 }
