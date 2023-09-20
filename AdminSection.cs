@@ -48,5 +48,13 @@ namespace Hostel_Management_System
             pnlMain.Controls.Add(newComplaint);
             newComplaint.Show();
         }
+
+        private void btnRooms_Click(object sender, EventArgs e)
+        {
+            frmManageRooms newRoom = new frmManageRooms() { TopLevel = false, TopMost = true };
+            newRoom.FormBorderStyle = FormBorderStyle.None;
+            pnlMain.Controls.Add(newRoom);
+            newRoom.Show();
+        }
     }
 }
