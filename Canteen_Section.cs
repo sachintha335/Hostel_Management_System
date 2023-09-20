@@ -52,5 +52,15 @@ namespace Hostel_Management_System
             pnlMain.Controls.Add(newMenu);
             newMenu.Show();
         }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
