@@ -31,7 +31,7 @@ namespace Hostel_Management_System
         {
             String connectionString;
             SqlConnection cnn;//https://www.mytecbits.com/microsoft/dot-net/error-sqlconnection-could-not-be-found
-            connectionString = "Data Source=DESKTOP-SJ2ILRA;Initial Catalog=Hostel_Management_Database;Integrated Security=True";
+            connectionString = "Data Source=DESKTOP-428C8AM;Initial Catalog=HMS;Integrated Security=True";
             cnn = new SqlConnection(connectionString);
             cnn.Open();
 
@@ -275,6 +275,16 @@ namespace Hostel_Management_System
             updateBtn.Visible = false;
             studIdRichBox.ReadOnly = false;//Again making the primary key editable when switching from update mode to add new mode
             studIdRichBox.ForeColor = Color.Black;
+        }
+
+        private void addNewStudLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
