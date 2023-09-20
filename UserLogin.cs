@@ -73,7 +73,19 @@ namespace Hostel_Management_System
                     newStudent.Show();
                     this.Hide();
                 }
-                    
+                else if (cmbRole.Text == "Canteen Asistant")
+                {
+                    Canteen_Section newSession = new Canteen_Section();
+                    newSession.Show();
+                    this.Hide();
+                }
+                else if (cmbRole.Text == "Security")
+                {
+                    Security security = new Security();
+                    security.Show();
+                    this.Hide();
+                }
+
             }
             else
             {

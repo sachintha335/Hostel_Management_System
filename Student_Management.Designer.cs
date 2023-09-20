@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.backgroundPanel = new System.Windows.Forms.Panel();
+            this.studIdRichBox = new System.Windows.Forms.RichTextBox();
+            this.addNewBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,8 +57,6 @@
             this.searchStudLbl = new System.Windows.Forms.Label();
             this.addNewStudLbl = new System.Windows.Forms.Label();
             this.headingLbl = new System.Windows.Forms.Label();
-            this.addNewBtn = new System.Windows.Forms.Button();
-            this.studIdRichBox = new System.Windows.Forms.RichTextBox();
             this.backgroundPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -90,11 +90,32 @@
             this.backgroundPanel.Controls.Add(this.searchStudLbl);
             this.backgroundPanel.Controls.Add(this.addNewStudLbl);
             this.backgroundPanel.Controls.Add(this.headingLbl);
-            this.backgroundPanel.Location = new System.Drawing.Point(-1, 0);
+            this.backgroundPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.backgroundPanel.Location = new System.Drawing.Point(0, 0);
             this.backgroundPanel.Name = "backgroundPanel";
-            this.backgroundPanel.Size = new System.Drawing.Size(1315, 651);
+            this.backgroundPanel.Size = new System.Drawing.Size(1315, 649);
             this.backgroundPanel.TabIndex = 0;
             this.backgroundPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.backgroundPanel_Paint);
+            // 
+            // studIdRichBox
+            // 
+            this.studIdRichBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studIdRichBox.Location = new System.Drawing.Point(283, 269);
+            this.studIdRichBox.Name = "studIdRichBox";
+            this.studIdRichBox.Size = new System.Drawing.Size(239, 30);
+            this.studIdRichBox.TabIndex = 28;
+            this.studIdRichBox.Text = "";
+            // 
+            // addNewBtn
+            // 
+            this.addNewBtn.Location = new System.Drawing.Point(18, 603);
+            this.addNewBtn.Name = "addNewBtn";
+            this.addNewBtn.Size = new System.Drawing.Size(100, 34);
+            this.addNewBtn.TabIndex = 27;
+            this.addNewBtn.Text = "Add New";
+            this.addNewBtn.UseVisualStyleBackColor = true;
+            this.addNewBtn.Visible = false;
+            this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
             // 
             // updateBtn
             // 
@@ -354,26 +375,6 @@
             this.headingLbl.Text = "Student Management";
             this.headingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // addNewBtn
-            // 
-            this.addNewBtn.Location = new System.Drawing.Point(18, 603);
-            this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(100, 34);
-            this.addNewBtn.TabIndex = 27;
-            this.addNewBtn.Text = "Add New";
-            this.addNewBtn.UseVisualStyleBackColor = true;
-            this.addNewBtn.Visible = false;
-            this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
-            // 
-            // studIdRichBox
-            // 
-            this.studIdRichBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studIdRichBox.Location = new System.Drawing.Point(283, 269);
-            this.studIdRichBox.Name = "studIdRichBox";
-            this.studIdRichBox.Size = new System.Drawing.Size(239, 30);
-            this.studIdRichBox.TabIndex = 28;
-            this.studIdRichBox.Text = "";
-            // 
             // Student_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,6 +383,7 @@
             this.Controls.Add(this.backgroundPanel);
             this.Name = "Student_Management";
             this.Text = "Student_Management";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.backgroundPanel.ResumeLayout(false);
             this.backgroundPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

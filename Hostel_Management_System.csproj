@@ -167,11 +167,26 @@
     <EmbeddedResource Include="AdminSection.resx">
       <DependentUpon>AdminSection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Canteen_Section.resx">
+      <DependentUpon>Canteen_Section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canteen_Section_Add_Items.resx">
+      <DependentUpon>Canteen_Section_Add_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canteen_Section_Remove_Items.resx">
+      <DependentUpon>Canteen_Section_Remove_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canteen_Section_View_Menu.resx">
+      <DependentUpon>Canteen_Section_View_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="complaint.resx">
       <DependentUpon>complaint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSection.resx">
+      <DependentUpon>StudentSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>

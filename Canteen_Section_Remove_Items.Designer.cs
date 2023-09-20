@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -39,8 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,10 +59,31 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-5, -14);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1063, 643);
+            this.panel1.Size = new System.Drawing.Size(1052, 615);
             this.panel1.TabIndex = 2;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(239, 453);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(263, 49);
+            this.textBox4.TabIndex = 12;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(730, 118);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(172, 70);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Search";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -120,7 +141,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(34, 460);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 42);
+            this.label5.Size = new System.Drawing.Size(182, 44);
             this.label5.TabIndex = 4;
             this.label5.Text = "Category";
             // 
@@ -132,7 +153,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(34, 369);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 42);
+            this.label4.Size = new System.Drawing.Size(112, 44);
             this.label4.TabIndex = 3;
             this.label4.Text = "Price";
             // 
@@ -144,7 +165,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(34, 275);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 42);
+            this.label3.Size = new System.Drawing.Size(126, 44);
             this.label3.TabIndex = 2;
             this.label3.Text = "Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -157,7 +178,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(135, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 42);
+            this.label2.Size = new System.Drawing.Size(114, 44);
             this.label2.TabIndex = 1;
             this.label2.Text = "Code";
             // 
@@ -173,26 +194,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Remove Items";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(730, 118);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 70);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(239, 453);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(263, 49);
-            this.textBox4.TabIndex = 12;
-            // 
             // Canteen_Section_Remove_Items
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,6 +202,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Canteen_Section_Remove_Items";
             this.Text = "Canteen_Section_Remove_Items";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
