@@ -17,31 +17,27 @@ namespace Hostel_Management_System
     public partial class Student_Management : Form
     {
         String updateId = "";
+        String connectionString;
+        SqlConnection cnn;
         public Student_Management()
         {
             InitializeComponent();
             addItemToRoomCombo();
             createDeleteButtonColumn();
             createViewButtonColumn();
-
-
-        }
-
-        public SqlConnection dbConnect()
-        {
-            String connectionString;
-            SqlConnection cnn;//https://www.mytecbits.com/microsoft/dot-net/error-sqlconnection-could-not-be-found
-            connectionString = "Data Source=DESKTOP-428C8AM;Initial Catalog=HMS;Integrated Security=True";
-            cnn = new SqlConnection(connectionString);
+            DBConnection DBconnection = DBConnection.getConnection();
+            cnn = DBconnection.con;
             cnn.Open();
 
-            return cnn;
         }
+
+        
 
         //Adding available room numbers to the combo box of the room selection in the form
         private void addItemToRoomCombo()
         {
-            SqlConnection cnn = dbConnect();
+            // SqlConnection cnn = dbConnect();
+            
             SqlCommand command;
             SqlDataReader dataReader;
             String sql;
@@ -77,7 +73,7 @@ namespace Hostel_Management_System
         private void saveBtn_Click(object sender, EventArgs e)
         {
 
-            SqlConnection cnn = dbConnect();
+            //SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
             String sql = "";
@@ -115,7 +111,7 @@ namespace Hostel_Management_System
         {
             String searchKey=searchBox.Text;
 
-            SqlConnection cnn = dbConnect();
+            //SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
             SqlDataReader dataReader;
@@ -163,7 +159,7 @@ namespace Hostel_Management_System
             //MessageBox.Show("Button Works");
             if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
-                SqlConnection cnn = dbConnect();
+                //SqlConnection cnn = dbConnect();
                 SqlCommand command;
                 String deleteId = "";
                 String sql = "";
@@ -192,7 +188,7 @@ namespace Hostel_Management_System
 
             if (e.ColumnIndex == 1 && e.RowIndex >= 0)
             {
-                SqlConnection cnn = dbConnect();
+               // SqlConnection cnn = dbConnect();
                 SqlCommand command;
                 String sql = "";
                 SqlDataAdapter adapter;
@@ -238,7 +234,7 @@ namespace Hostel_Management_System
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection cnn = dbConnect();
+           // SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
             String sql = "";

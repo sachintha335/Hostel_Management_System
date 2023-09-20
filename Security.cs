@@ -52,7 +52,9 @@ namespace Hostel_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-         //   student_tableTableAdapter.AddNew();
+
+            //student_tableTableAdapter.AddNew();
+
             //studenttableBindingSource.EndEdit();
             //student_tableTableAdapter.Update();
         }
@@ -69,7 +71,9 @@ namespace Hostel_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-          //  student_tableTableAdapter.RemoveCurrent();
+
+            //student_tableTableAdapter.RemoveCurrent();
+
         }
     }
 }
