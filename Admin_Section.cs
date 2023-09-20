@@ -27,10 +27,14 @@ namespace Hostel_Management_System
 
         }
 
+<<<<<<< Updated upstream
         private void button1_Click(object sender, EventArgs e)
         {
             Security fm = new Security();
             fm.ShowDialog();
         }
+=======
+        
+>>>>>>> Stashed changes
     }
 }
