@@ -76,6 +76,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSection.Designer.cs">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Canteen_Section_Add_Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="StudentSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentSection.Designer.cs">
+      <DependentUpon>StudentSection.cs</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.cs">
       <SubType>Form</SubType>
