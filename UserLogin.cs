@@ -21,6 +21,7 @@ namespace Hostel_Management_System
             InitializeComponent();
             DBConnection DBconnection = DBConnection.getConnection();
             connection = DBconnection.con;
+            connection.Close();
         }
 
         public void clear()
@@ -92,8 +93,8 @@ namespace Hostel_Management_System
                 MessageBox.Show("Incorrect Credentials !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 clear();
             }
-                
 
+            connection.Close();
         }
     }
 }

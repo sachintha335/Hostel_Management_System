@@ -24,7 +24,7 @@ namespace Hostel_Management_System
             connection = DBconnection.con;
             int studentIdToSearch = 111; // Replace with the student ID coming from login
 
-            
+                connection.Close();
                 connection.Open();
 
                 string sqlQuery = "SELECT * FROM Students WHERE Student_Id = @studentId";

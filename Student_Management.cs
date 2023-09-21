@@ -24,6 +24,7 @@ namespace Hostel_Management_System
             InitializeComponent();
             DBConnection DBconnection = DBConnection.getConnection();
             cnn = DBconnection.con;
+            cnn.Close();
             cnn.Open();
             addItemToRoomCombo();
             createDeleteButtonColumn();
@@ -38,7 +39,7 @@ namespace Hostel_Management_System
         private void addItemToRoomCombo()
         {
             // SqlConnection cnn = dbConnect();
-            cnn.Open();
+           
             SqlCommand command;
             SqlDataReader dataReader;
             String sql;
@@ -53,7 +54,7 @@ namespace Hostel_Management_System
 
             dataReader.Close(); 
             command.Dispose();
-            cnn.Close();
+            
         }
 
         private void clearAll()
@@ -73,7 +74,7 @@ namespace Hostel_Management_System
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            cnn.Open();
+           
             //SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -98,7 +99,7 @@ namespace Hostel_Management_System
             MessageBox.Show("Record Saved Successfully!");
 
             command.Dispose();
-            cnn.Close();
+            //cnn.Close();
             clearAll();
 
         }
@@ -111,7 +112,7 @@ namespace Hostel_Management_System
         private void searchBtn_Click(object sender, EventArgs e)
         {
             String searchKey=searchBox.Text;
-            cnn.Open();
+           // cnn.Open();
             //SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -127,7 +128,7 @@ namespace Hostel_Management_System
             DataTable table = new DataTable();
             table.Load(dataReader);
             dataGridView1.DataSource = table;//Assigning the DataTable object to the data Source of the datagridview
-            cnn.Close();
+            //cnn.Close();
         }
 
 
@@ -157,7 +158,7 @@ namespace Hostel_Management_System
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            cnn.Open();
+            //cnn.Open();
             //MessageBox.Show("Button Works");
             if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
@@ -181,7 +182,7 @@ namespace Hostel_Management_System
                     adapter.InsertCommand.ExecuteNonQuery();
 
                     command.Dispose();
-                    cnn.Close();
+                   // cnn.Close();
                     MessageBox.Show("Record Deleted Successfully!");
 
                 }    
@@ -236,7 +237,7 @@ namespace Hostel_Management_System
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            cnn.Open();
+           // cnn.Open();
             // SqlConnection cnn = dbConnect();
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -262,7 +263,7 @@ namespace Hostel_Management_System
             MessageBox.Show("Record Updated Successfully!");
 
             command.Dispose();
-            cnn.Close();
+           // cnn.Close();
             clearAll();
         }
 
